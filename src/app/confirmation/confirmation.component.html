@@ -1,0 +1,194 @@
+<div class="container">
+
+  <div class="py-5 text-center">
+
+    <!-- Image -->
+    <img class="d-block mx-auto mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5vde2mxfjvQZ3P9coh8fMzgm0YzMVpZjNX5Mwv98IGSKsHqtNg" alt="" width="200" height="200">
+
+    <h2>Confirmation Page</h2>
+    <p class="lead"></p>
+    <p>
+      Dear Faith Chan, you are going to transfer from
+    </p>
+
+  </div>
+
+  <!--Transfer from to section-->
+  <!-- MD means breakpoint -->
+
+  <div class="row">
+
+
+
+    <div class="col-12 col-md-5">
+      <ul class="list-group mb-0">
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">SQ 352 Economy</h6>
+            <small class="text-muted">Orgin/Destination: SIN-CPH</small><br>
+            <small class="text-muted">Departure Date: 20 Jul</small><br>
+            <small class="text-muted">Departure Time: 23:50</small><br>
+            <small class="text-muted">Arrival Time: 6:25 +1</small>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex col-12 col-md-2 text-center align-items-center flex-row">
+      <h2 class="w-100">
+        to
+      </h2>
+    </div>
+    <div class="col-12 col-md-5">
+      <ul class="list-group mb-0">
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">SQ 352 Premium Economy </h6>
+            <small class="text-muted">Orgin/Destination: SIN-CPH</small><br>
+             <small class="text-muted">Departure Date: 21 Jul</small><br>
+            <small class="text-muted">Departure Time: 23:50</small><br>
+            <small class="text-muted">Arrival Time: 6:25 +1</small>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted my-4">Reward Breakdown</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+
+      <!-- Unorder List -->
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Monetary Compensation</h6>
+            <small class="text-muted">Transfer flight compensaation</small>
+          </div>
+          <span class="text-muted">$400</span>
+        </li>
+
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Free Upgrade </h6>
+            <small class="text-muted">Upgrade to Premium Economy</small>
+          </div>
+          <span class="text-muted">$0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Crowne Plaza Changi Airport </h6>
+            <small class="text-muted"> 20 Jul to 21 Jul
+            </small> <br>
+            <small class="text-muted">Changi Aiport, Singapore</small>
+
+          </div>
+          <span class="text-muted">$0</span>
+        </li>
+
+
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Compensation Total (SGD)</span>
+          <strong>$400
+          </strong>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+
+      <form class="needs-validation" novalidate>
+
+        <h4 class="my-4">Compensation Through</h4>
+
+        <!--Compensation Page -->
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="cash" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="cash">Cash refund</label>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+
+        <div class="containers">
+          <div>
+            <p>If choosing "Cash Redund", please come to the airport counter at least 2 hours before take off for
+              refunding process </p>
+          </div>
+
+        </div>
+
+
+
+        <hr class="mb-4">
+        <a routerLink="/thankyou"><button class="btn btn-primary btn-lg btn-block" type="submit">Confirm</button></a>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2018 Think Tank</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>

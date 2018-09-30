@@ -1,0 +1,216 @@
+<div class="container">
+
+  <div class="py-5 text-center">
+
+    <!-- Image -->
+    <img class="d-block mx-auto mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5vde2mxfjvQZ3P9coh8fMzgm0YzMVpZjNX5Mwv98IGSKsHqtNg" alt="" width="200" height="200">
+
+
+    <h2>Think Tank</h2>
+    <p class="lead"></p>
+    <p>
+      Dear Mr Faith Chan, we are inviting volunteers on your
+      upcoming flight who are willing to take alternative flight
+      in exchange for reward options. 
+    </p>
+
+  </div>
+
+  <!--Transfer from to section-->
+  <!-- MD means breakpoint -->
+  <div class="row">
+    <div class="d-flex col-12 col-md-5 mb-0 mt-3">
+      <h4 class="d-flex justify-content-between align-items-center mb-0">
+        <span class="text-muted">Original Flight:</span>
+      </h4>
+    </div>
+
+
+
+    <div class="col-12 col-md-6">
+      <ul class="list-group mb-3 mt-3">
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">SQ 352 Economy </h6>
+            <small class="text-muted">Orgin/Destination: SIN/CPH</small><br>
+            <small class="text-muted">Departure Date: 20 July</small><br>
+            <small class="text-muted">Departure Time: 23:50</small><br>
+            <small class="text-muted">Arrival Time: 6:25 +1</small>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-md-7 order-md-1">
+
+      <form class="needs-validation" novalidate>
+
+        <h4 class="d-flex justify-content-between align-items-center mb-3 mt-3">
+          <span class="text-muted">Our Reward Offer</span>
+        </h4>
+        <div class="d-flex flex-column text-center" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+          <label ngbButtonLabel>
+            <div class="p-4 border rounded">
+              <div>
+                <h6 class="my-0">$400 Compensation + Free Hotel + Free Upgrade</h6>
+                <small class="">Credit/Cash Compensate </small>
+                <br>
+                <small class="">Hotel: Crowne Plaza Changi Airport </small>
+                <br>
+
+                <small class="">Upgrade: To Premium Economy</small>
+              </div>
+            </div>
+            <input ngbButton type="radio" [value]="1" class="o-0">
+          </label>
+          Or
+          <label ngbButtonLabel>
+            <div class="p-4 border rounded">
+              <div>
+                <h6 class="my-0">$600 Compensation</h6>
+                <small class="">Credit / Cash Compensate </small>
+              </div>
+            </div>
+            <input ngbButton type="radio" value="middle" class="o-0">
+          </label>
+
+        </div>
+        <h4>
+
+          <span class="text-muted"> Select One Alternative Flight </span>
+        </h4>
+
+
+        <!--Compensation Page -->
+
+        <div class="text-center" ngbRadioGroup name="radioBasic" [(ngModel)]="model2">
+          <div class="row">
+            <div class="col-6">
+              <label ngbButtonLabel class="w-100">
+                <div class="p-4 border rounded">
+                  <div>
+                    <h6 class="my-0">SQ 352 Premium Economy </h6>
+                    <small class="">Departure Date: 21 Jul</small> <br>
+                    <small class="">Orgin/ Destination: SIN - CPH</small>
+                  </div>
+                </div>
+                <input ngbButton type="radio" [value]="1" class="o-0">
+              </label>
+            </div>
+            <div class="col-6">
+              <label ngbButtonLabel class="w-100">
+                <div class="p-4 border rounded">
+                  <div>
+                    <h6 class="my-0">SQ 352 Premium Economy</h6>
+                    <small class="">Departure Date: 22 Jul</small> <br>
+                    <small class="">Orgin/ Destination: SIN - CPH</small>
+                  </div>
+                </div>
+                <input ngbButton type="radio" value="middle" class="o-0">
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <hr class="mb-4">
+
+
+
+        <div class="row">
+
+          <div class="col-md-6 mb-1">
+            <a routerLink="/confirmation"><button class="btn btn-primary btn-lg btn-block" type="submit">Accept</button></a>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <button class="btn btn-danger btn-lg btn-block" type="submit">Reject All</button>
+          </div>
+
+        </div>
+
+
+
+
+
+      </form>
+    </div>
+    <div class="col-md-5 order-md-2 mb-3 mt-3">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Selected Reward Breakdown</span>
+        <span class="badge badge-secondary badge-pill">4</span>
+      </h4>
+
+      <!-- Unorder List -->
+      <ul class="list-group mb-3">
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Monetary Compensation</h6>
+            <small class="text-muted">Transfer flight compensaation</small>
+          </div>
+          <span class="text-muted">$400</span>
+        </li>
+
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Free Upgrade </h6>
+            <small class="text-muted">Upgrade to Premium Economy</small>
+          </div>
+          <span class="text-muted">$0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Crowne Plaza Changi Airport </h6>
+            <small class="text-muted">20 Jul to 21 Jul
+            </small> <br>
+            <small class="text-muted">Changi Airport, Singapore</small>
+
+          </div>
+          <span class="text-muted">$0</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">SQ 352 Premium Economy </h6>
+            <small class="text-muted">Orgin/Destination: SIN - CPH</small><br>
+            <small class="text-muted">Departure Time: 23:50</small><br>
+            <small class="text-muted">Arrival Time: 6:25 +1</small>
+
+          </div>
+          <span class="text-muted">$0</span>
+        </li>
+
+
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Compensation Total (SGD)</span>
+          <strong>$400</strong>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2018 Think Tank</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
